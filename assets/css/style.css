@@ -177,15 +177,12 @@ li {
       padding: 1rem 0;
 }
 
-.icon_menu {
-      flex-direction: column;
-}
-
 .icon_menu > img {
-      width: 50%;
+      width: 70%;
       padding: 0.25rem 0;
 }
 
+.icon_menu,
 .menu_list ul {
       height: 100%;
       display: flex;
@@ -193,7 +190,30 @@ li {
       justify-content: space-around;
 }
 
+.playlist > h4 {
+      padding: 1rem 0;
+      text-transform: uppercase;
+}
 
+.playlist .create {
+      width: max-content;
+      align-items: center;
+}
+.playlist .create i {
+      font-size: 30px;
+      padding-right: 0.5rem;
+}
+
+.create_square {
+      background-color: var(--sp_extinct);
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+      width: 40px;
+      height: 40px;
+      color: var(--sp_darkness);
+      margin-right: 0.5rem;
+}
 /* #endregion left menu */
 
 /* #region player container */
