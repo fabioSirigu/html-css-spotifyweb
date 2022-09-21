@@ -95,10 +95,16 @@ li {
       font-size: 10px;
 }
 
+.fs_12 {
+      font-size: 12px;
+}
 .fs_13 {
       font-size: 13px;
 }
 
+.fs_16 {
+      font-size: 14px;
+}
 .fs_20 {
       font-size: 20px;
 }
@@ -122,10 +128,6 @@ li {
       color: var(--sp_active);
 }
 
-.w_mxc {
-      width: max-content;
-}
-
 .d_none {
       display: none;
 }
@@ -136,7 +138,6 @@ li {
       overflow: hidden;
       display: flex;
 }
-
 
 .album_container {
       overflow: auto;
@@ -214,6 +215,30 @@ li {
 }
 
 /* #endregion menu */
+
+/* #region container album content */
+
+.container {
+      padding: 1rem 0;
+}
+
+.container h2,
+.container > p {
+      padding: 1rem;
+}
+
+.container img {
+      padding: 1rem;
+}
+
+.title,
+.subtitle {
+      text-align: center;
+      padding: 0.25rem 0;
+      font-weight: bold;
+}
+
+/* #endregion container album content */
 
 /* #region left menu */
 
