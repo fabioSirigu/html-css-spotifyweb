@@ -140,8 +140,10 @@ li {
 
 .album_container {
       overflow: auto;
+      background-color: var(--sp_darker);
 }
 
+/* #region Upgrade Bar */
 .upgrade_bar {
       height: 100px;
       width: 100%;
@@ -161,6 +163,58 @@ li {
       vertical-align: middle;
       text-transform: uppercase;
 }
+
+/* #endregion Upgrade Bar */
+
+/* #region menu */
+
+.album_menu {
+      height: 80px;
+      width: 100%;
+}
+
+.album_menu .row {
+      justify-content: center;
+      margin: auto;
+      width: 60%;
+      align-items: center;
+      height: 50%;
+}
+
+.list_album_menu {
+      width: 100%;
+      justify-content: center;
+}
+
+.list_album_menu > li {
+      text-transform: uppercase;
+      color: var(--sp_extinct);
+      font-weight: bold;
+      font-size: 14px;
+      padding: 1rem 1rem;
+}
+
+.bord_evid {
+      position: relative;
+}
+
+.bord_evid::after {
+      content: "";
+      background: var(--sp_evidence);
+      position: absolute;
+      bottom: 5px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      height: 1px;
+      width: 50px;
+} 
+.list_album_menu > li:hover {
+      cursor: pointer;
+      color: var(--sp_light);
+}
+
+/* #endregion menu */
+
 /* #region left menu */
 
 
