@@ -8,6 +8,47 @@
 
 /* #endregion Common Rules */
 
+/* #region Debug */
+
+.debug .player_container {
+      background-color: green;
+}
+
+.debug .left_menu {
+      background-color: blue;
+}
+
+.debug .album_container {
+      background-color: red;
+}
+
+
+.debug .left_menu .menu_top {
+      background-color: yellow;
+}
+
+.debug .left_menu .menu_bottom {
+      background-color: azure;
+}
+
+.debug .upgrade_bar {
+      background-color: violet;
+}
+
+/* #endregion Debug */
+
+/* #region Utilities */
+
+.col_2 {
+      width: calc(100% / 12 * 2);
+}
+
+.col_10 {
+      width: calc(100% / 12 * 10);
+}
+
+/* #endregion Utilities */
+
 .content_container {
       height: calc(100vh - 100px);
       overflow: hidden;
@@ -18,25 +59,39 @@
 .player_container {
       height: 100px;
       width: 100%;
-      background-color: green;
       position: fixed;
       z-index: 1000;
 }
 
-.col_2 {
-      width: calc(100% / 12 * 2);
-}
-
-.col_10 {
-      width: calc(100% / 12 * 10);
-}
-
 .left_menu {
-      background-color: blue;
       height: 100%;
+      padding: 0 1rem;
 }
 
 .album_container {
-      background-color: red;
       overflow: auto;
+}
+
+.left_menu .row {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+}
+
+.left_menu .menu_top {
+      height: calc(100% / 12 * 10);
+      width: 100%;
+}
+
+.left_menu .menu_bottom {
+      background-color: azure;
+      height: calc(100% / 12 * 2);
+      width: 100%;
+}
+
+.upgrade_bar {
+      height: 100px;
+      width: 100%;
+      position: fixed;
 }
