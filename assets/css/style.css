@@ -170,7 +170,9 @@ img {
       background-color: var(--sp_dark_light);
 }
 
-.player_container > .row {
+.player_container > .row,
+.bottom_player .row,
+.central_player .bottom_player .row .player {
       width: 100%;
 }
 
@@ -193,6 +195,19 @@ img {
       padding: 0 1rem;
 }
 
+.central_player .bottom_player .row .player {
+      justify-content: center;
+      align-items: center;
+}
 
+.central_player .bottom_player .row .player > div {
+      padding: 0 1rem;
+}
+
+.central_player .bottom_player .bar {
+      width: 60%;
+      height: 2px;
+      background-color: var(--sp_active);
+}
 
 /* #endregion player container */
