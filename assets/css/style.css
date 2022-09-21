@@ -8,6 +8,7 @@
 
 body {
       font-family: 'Montserrat', sans-serif;
+      overflow: hidden;
 }
 /* #endregion Common Rules */
 
@@ -117,7 +118,6 @@ img {
 .content_container {
       height: calc(100vh - 100px);
       overflow: hidden;
-      position: relative;
       display: flex;
 }
 
@@ -131,6 +131,7 @@ img {
 
 
 .left_menu {
+      overflow: hidden;
       height: 100%;
       padding: 0 1rem;
 }
@@ -156,18 +157,21 @@ img {
 .upgrade_bar {
       height: 100px;
       width: 100%;
-      position: fixed;
 }
 /* #endregion left menu */
 
 /* #region player container */
 
 .player_container {
+      display: flex;
+      overflow: hidden;
       height: 100px;
       width: 100%;
-      position: fixed;
-      z-index: 1000;
       background-color: var(--sp_dark_light);
+}
+
+.player_container > .row {
+      width: 100%;
 }
 
 .left_player > .row {
@@ -181,9 +185,10 @@ img {
       padding: 1rem 0;
 }
 
-.top_player {
+.top_player > div {
       align-items: center;
 }
+
 .central_player .top_player i {
       padding: 0 1rem;
 }
