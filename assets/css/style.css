@@ -1,0 +1,42 @@
+/* #region Common Rules */
+
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+/* #endregion Common Rules */
+
+.content_container {
+      height: calc(100vh - 100px);
+      overflow: hidden;
+      position: relative;
+      display: flex;
+}
+
+.player_container {
+      height: 100px;
+      width: 100%;
+      background-color: green;
+      position: fixed;
+      z-index: 1000;
+}
+
+.col_2 {
+      width: calc(100% / 12 * 2);
+}
+
+.col_10 {
+      width: calc(100% / 12 * 10);
+}
+
+.left_menu {
+      background-color: blue;
+      height: 100%;
+}
+
+.album_container {
+      background-color: red;
+      overflow: auto;
+}
