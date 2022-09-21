@@ -121,6 +121,14 @@ li {
 .act {
       color: var(--sp_active);
 }
+
+.w_mxc {
+      width: max-content;
+}
+
+.d_none {
+      display: none;
+}
 /* #endregion Utilities */
 
 .content_container {
@@ -166,6 +174,10 @@ li {
 .left_menu .menu_bottom {
       height: calc(100% / 12 * 2);
       width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      background-color: var(--sp_darkness);
 }
 
 .logo_small {
@@ -196,9 +208,10 @@ li {
 }
 
 .playlist .create {
-      width: max-content;
       align-items: center;
+      padding-bottom: 1rem;
 }
+
 .playlist .create i {
       font-size: 30px;
       padding-right: 0.5rem;
@@ -214,6 +227,34 @@ li {
       color: var(--sp_darkness);
       margin-right: 0.5rem;
 }
+
+.playlist li {
+      padding: 0.5rem 0;
+}
+
+/* #region bottom menu */
+
+.install_app i {
+      padding-right: 0.5rem;
+}
+
+.install_app {
+      border-bottom: 1px solid var(--sp_extinct);
+      padding-bottom: 1rem;
+}
+
+.account path {
+      fill: var(--sp_extinct);
+}
+
+.avatar {
+      width: 50px;
+      height: 50px;
+      border: 1px solid var(--sp_extinct);
+      padding: 0.5rem;
+      border-radius: 50%;
+}
+/* #endregion bottom menu */
 /* #endregion left menu */
 
 /* #region player container */
