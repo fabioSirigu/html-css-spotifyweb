@@ -204,10 +204,23 @@ img {
       padding: 0 1rem;
 }
 
-.central_player .bottom_player .bar {
+.central_player .bottom_player .bar,
+.right_player .bar {
       width: 60%;
-      height: 2px;
+      height: 4px;
+      margin: 0 1rem;
+      border-radius: 1rem;
       background-color: var(--sp_active);
 }
 
+.right_player .row {
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+}
+
+.icon_action i,
+.right_player i {
+      padding: 0 0.3rem;
+}
 /* #endregion player container */
