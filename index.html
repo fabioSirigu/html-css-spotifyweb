@@ -4,10 +4,17 @@
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Google Fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> 
+      <!-- FontAwesome -->
+      <script src="https://kit.fontawesome.com/641e4c79bb.js" crossorigin="anonymous"></script>
+      <!-- CSS -->
       <link rel="stylesheet" href="./assets/css/style.css">
       <title>Spotify</title>
 </head>
-<body class="debug">
+<body class="">
       <div class="content_container">
             <div class="col_2 left_menu">
                   <div class="row">
@@ -25,7 +32,43 @@
             <!-- /.col_10 album_container -->
       </div>
       <!-- /.content_container -->
-      <div class="player_container"></div>
+      <div class="player_container">
+            <div class="row">
+                  <div class="left_player col_2">
+                        <div class="row">
+                              <div class="col_2 cover">
+                                    <img src="./assets/img/sinister.jpeg" alt="sinister cover">
+                              </div>
+                              <!-- /.col_4 cover -->
+                              <div class="col_4 author">
+                                    <div class="title fs_13 bold wht">
+                                          Sinister
+                                    </div>
+                                    <!-- /.title -->
+                                    <div class="subtitle fs_10 ext">
+                                          Brano Nome
+                                    </div>
+                                    <!-- /.subtitle -->
+                              </div>
+                              <!-- /.col_6 author -->
+                              <div class="col_4 icon_action">
+                                    <div class="action fs_13 ext">
+                                          <i class="fa-regular fa-heart"></i>
+                                          <i class="fa-regular fa-folder"></i>
+                                    </div>
+                                    <!-- /.action -->
+                              </div>
+                              <!-- /.col_2 icon_action -->
+                        </div>
+                        <!-- /.row -->
+                  </div>
+                  <!-- /.left_player col_2 -->
+                  <div class="player col_8"></div>
+                  <!-- /.player col_8 -->
+                  <div class="right_player col_2"></div>
+                  <!-- /.right_player col_2 -->
+            </div>
+      </div>
       <!-- /.player_container -->
 </body>
 </html>

@@ -6,6 +6,9 @@
       box-sizing: border-box;
 }
 
+body {
+      font-family: 'Montserrat', sans-serif;
+}
 /* #endregion Common Rules */
 
 /* #region Debug */
@@ -39,14 +42,61 @@
 
 /* #region Utilities */
 
+:root {
+      --sp_darkness: #000000;
+      --sp_dark: #080B12;
+      --sp_darker: #141922;
+      --sp_dark_light: #282828;
+      --sp_extinct: #5A5A5A;
+      --sp_evidence: #ADFF2F;
+      --sp_lighter: #C1C1C1;
+      --sp_active: #D2D2D2;
+      --sp_light: #FFFFFF;
+
+}
+
+.row {
+      display: flex;
+      flex-wrap: wrap;
+}
 .col_2 {
       width: calc(100% / 12 * 2);
 }
 
+.col_4 {
+      width: calc(100% / 12 * 4);
+}
+
+.col_8 {
+      width: calc(100% / 12 * 8);
+}
 .col_10 {
       width: calc(100% / 12 * 10);
 }
 
+img {
+      width: 100%;
+}
+
+.fs_13 {
+      font-size: 13px;
+}
+
+.fs_10 {
+      font-size: 10px;
+}
+
+.bold {
+      font-weight: bold;
+}
+
+.wht {
+      color: var(--sp_light);
+}
+
+.ext {
+      color: var(--sp_extinct);
+}
 /* #endregion Utilities */
 
 .content_container {
@@ -61,15 +111,19 @@
       width: 100%;
       position: fixed;
       z-index: 1000;
+      background-color: var(--sp_dark_light);
 }
+
+
+.album_container {
+      overflow: auto;
+}
+
+/* #region left menu */
 
 .left_menu {
       height: 100%;
       padding: 0 1rem;
-}
-
-.album_container {
-      overflow: auto;
 }
 
 .left_menu .row {
@@ -95,3 +149,17 @@
       width: 100%;
       position: fixed;
 }
+/* #endregion left menu */
+
+/* #region player container */
+
+.left_player > .row {
+      padding: 2rem 1rem;
+      align-items: center;
+      justify-content: space-between;
+}
+
+
+
+
+/* #endregion player container */
