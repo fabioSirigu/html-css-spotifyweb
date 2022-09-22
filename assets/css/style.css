@@ -275,10 +275,38 @@ li {
       aspect-ratio: 1 / 1;
 }
 
-/* img.overlay {
-      mix-blend-mode: darken;
-} */
+.cover_overlay {
+      background-color: var(--sp_darker);
+      color: #fff;
+      position: relative;
+}
 
+.cover_overlay figcaption {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      align-items: center;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      opacity: 0;
+}
+
+figcaption > i {
+      font-size: 60px;
+}
+.cover_overlay > img:hover {
+      opacity: 0.5;
+      
+}
+    
+.cover_overlay:hover figcaption {
+      opacity: 1;
+      cursor: pointer;
+}
 /* #endregion container album content */
 
 /* #region left menu */
