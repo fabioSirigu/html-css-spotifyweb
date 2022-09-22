@@ -117,8 +117,13 @@ li {
 .fs_16 {
       font-size: 14px;
 }
+
 .fs_20 {
       font-size: 20px;
+}
+
+.fs_24 {
+      font-size: 24px;
 }
 .fs_32 {
       font-size: 32px;
@@ -210,7 +215,7 @@ li {
       color: var(--sp_extinct);
       font-weight: bold;
       font-size: 14px;
-      padding: 1rem 1rem;
+      padding: 0.5rem;
 }
 
 .bord_evid {
@@ -427,7 +432,6 @@ li {
 }
 .left_player.d_flex {
       align-items: center;
-      justify-content: space-between;
 }
 
 .left_player .title,
@@ -548,13 +552,19 @@ li {
 
 /* #region mediaquery */
 
+@media screen and (max-width:1200px) {
+      .player_container .col_md_4 {
+            width: calc(100% / 12 * 4);
+      }
+}
+
 @media screen and (max-width:878px) {
       .album {
             width: calc(100% / 4);
-      }
+      }   
       
-      .player_container .col_md_4 {
-            width: calc(100% / 12 * 4);
+      .left_player.d_flex {
+            justify-content: space-between;
       }
 }
 
@@ -566,14 +576,22 @@ li {
       .player_container .col_s_4 {
             width: calc(100% / 12 * 4);
       }
+
+      .icon_action .action {
+            display: flex;
+            flex-direction: column;
+      }
+      .right_player .bar {
+            width: 40%;
+      }
 }
 
 @media screen and (max-width:552px) {
       
-      
       .logo_name,
       .menu_list,
-      .playlist {
+      .playlist,
+      .left_player .icon_action {
             display: none;
       }
       
@@ -610,6 +628,13 @@ li {
             width: 50px;
             padding: 0.25rem;
       }
+
+      .left_player.d_flex {
+            justify-content: start;
+      }
+      .left_player .col_md_4 {
+            width: calc(100% / 12 * 4);
+      }
       
       .icon_menu.bord_evid::after {
             background-color: transparent;
@@ -620,6 +645,34 @@ li {
             align-items: center;
       }
       
+      .right_player .bar {
+            width: 30%;
+      }
       
 }
+
+@media screen and (max-width:500px) {
+      
+      .left_player .author,
+      .right_player .fa-list-ul,
+      .right_player .fa-display {
+            display: none;
+      }
+}
+
+@media screen and (max-width:410px) {
+      
+      .right_player .fa-volume-high {
+            display: none;
+      }
+
+      .col_xxs_2 {
+            width: calc(100% / 12 * 2);
+      }
+
+      .col_xxs_8 {
+            width: calc(100% / 12 * 8);
+      }
+}
+
 /* #endregion mediaquery */
