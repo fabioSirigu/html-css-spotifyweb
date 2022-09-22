@@ -57,7 +57,7 @@ body {
       --sp_lighter: #C1C1C1;
       --sp_active: #D2D2D2;
       --sp_light: #FFFFFF;
-
+      
 }
 
 .row {
@@ -371,19 +371,26 @@ li {
 .install_app {
       border-bottom: 1px solid var(--sp_extinct);
       padding-bottom: 1rem;
+      
 }
 
+.account.d_flex {
+      align-items: center;
+      margin: 0.5rem 0;
+}
 
 .account path {
-      fill: var(--sp_extinct);
+      fill: var(--sp_light);
 }
 
 .avatar {
-      width: 50px;
-      height: 50px;
+      width: 25px;
+      height: 25px;
       border: 1px solid var(--sp_extinct);
-      padding: 0.5rem;
+      padding: 0.25rem;
       border-radius: 50%;
+      background-color: var(--sp_extinct);
+      margin-right: 0.5rem;
 }
 /* #endregion bottom menu */
 /* #endregion left menu */
@@ -503,6 +510,7 @@ li {
 /* #endregion player container */
 
 /* #region hover */
+
 .menu_list li:hover,
 .playlist li:hover,
 .playlist .create:hover p,
@@ -544,7 +552,7 @@ li {
       .album {
             width: calc(100% / 4);
       }
-
+      
       .player_container .col_md_4 {
             width: calc(100% / 12 * 4);
       }
@@ -554,9 +562,64 @@ li {
       .album {
             width: calc(100% / 2);
       }
-
-      .player_container .col_s_2 {
-            width: calc(100% / 12 * 2);
+      
+      .player_container .col_s_4 {
+            width: calc(100% / 12 * 4);
       }
+}
+
+@media screen and (max-width:552px) {
+      
+      
+      .logo_name,
+      .menu_list,
+      .playlist {
+            display: none;
+      }
+      
+      .menu_bottom > .install_app > p,
+      .menu_bottom > .account > p {
+            display: none;
+      }
+      
+      
+      .menu_bottom .account {
+            justify-content: center;
+            aspect-ratio: 1/1;
+            padding: 0.5rem 0;
+      }
+
+      .menu_bottom .avatar {
+            margin: 0;
+      }
+      
+      .install_app i {
+            padding-right: 0rem;
+      }
+      
+      .install_app {
+            border-bottom: none;
+            justify-content: center;
+      }
+      .logo_small {
+            display: block;
+            padding: 0.5rem;
+      }
+      
+      .left_menu {
+            width: 50px;
+            padding: 0.25rem;
+      }
+      
+      .icon_menu.bord_evid::after {
+            background-color: transparent;
+      }
+      
+      .icon_menu {
+            width: 100%;
+            align-items: center;
+      }
+      
+      
 }
 /* #endregion mediaquery */
