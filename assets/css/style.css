@@ -218,10 +218,14 @@ li {
       height: 1px;
       width: 50px;
 } 
-.list_album_menu > li:hover {
-      cursor: pointer;
-      color: var(--sp_light);
+
+.main_menu .bord_evid::after {
+      top: 15px;
+      left: -50%;
+      height: 25px;
+      width: 1px;
 }
+
 
 /* #endregion menu */
 
@@ -256,6 +260,10 @@ li {
       object-fit: cover;
       aspect-ratio: 1 / 1;
 }
+
+/* img.overlay {
+      mix-blend-mode: darken;
+} */
 /* #endregion container album content */
 
 /* #region left menu */
@@ -314,7 +322,6 @@ li {
       justify-content: space-around;
 }
 
-
 .playlist > h4 {
       padding: 1rem 0;
       text-transform: uppercase;
@@ -356,6 +363,7 @@ li {
       padding-bottom: 1rem;
 }
 
+
 .account path {
       fill: var(--sp_extinct);
 }
@@ -371,6 +379,7 @@ li {
 /* #endregion left menu */
 
 /* #region player container */
+
 
 .player_container {
       display: flex;
@@ -391,6 +400,13 @@ li {
       align-items: center;
       justify-content: space-between;
 }
+
+.left_player .title,
+.left_player .subtitle {
+      text-align: left;
+      padding: 0;
+}
+
 
 .central_player .top_player {
       justify-content: center;
@@ -426,6 +442,20 @@ li {
       border-radius: 1rem;
       background-color: var(--sp_active);
 }
+.bar {
+      cursor: pointer;
+      justify-content: end;
+      align-items: center;
+}
+
+.circle_active {
+      padding: 0.5rem;
+      width: 0.5rem;
+      background-color: var(--sp_light);
+      border-radius: 50%;
+      display: none;
+}
+
 
 .right_player .row {
       width: 100%;
@@ -438,3 +468,34 @@ li {
       padding: 0 0.3rem;
 }
 /* #endregion player container */
+
+/* #region hover */
+.menu_list li:hover,
+.playlist li:hover,
+.playlist .create:hover p,
+.install_app p:hover,
+.list_album_menu > li:hover,
+.left_player .icon_action i:hover {
+      color: var(--sp_light);
+      cursor: pointer;
+}
+
+
+.playlist .create:hover .create_square {
+      cursor: pointer;
+      background-color: var(--sp_light);
+}
+
+.left_player .subtitle:hover {
+      color: var(--sp_light);
+      text-decoration: underline;
+      cursor: pointer;
+}
+
+.bar:hover .circle_active {
+      display: block;
+}
+.bar:hover .bar_active {
+      background-color: var(--sp_evidence);
+}
+/* #endregion hover */
