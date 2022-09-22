@@ -207,7 +207,14 @@ li {
       -4px -4px 6px 0 rgba(116, 125, 136, .2), 
       inset -4px -4px 6px 0 rgba(255,255,255,.5),
       inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
-      color: #fff;
+      color: var(--sp_light);
+}
+
+.btn:active {
+      box-shadow: 0px 0px 36px 5px rgba(255,255,255,0.8);
+      color: red;
+      font-weight: bold;
+      
 }
 
 .btn:hover:after {
@@ -392,6 +399,36 @@ figcaption > i {
       padding: 1rem 0;
 }
 
+.logo_name path {
+      animation-name: logo;
+      animation-timing-function: linear;
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      fill: var(--sp_evidence);
+}
+
+@keyframes logo {
+      0% {
+            fill: rgb(157, 255, 0);
+      }
+      20% {
+            fill: rgb(81, 255, 0);
+      }
+      40% {
+            fill: rgb(0, 255, 85);
+      }
+      60% {
+            fill: rgb(0, 255, 191);
+      }
+      80% {
+            fill: rgb(0, 217, 255); 
+      }
+      100% {
+            fill: rgb(0, 81, 255); 
+      }
+}
+
 .icon_menu > img {
       width: 70%;
       padding: 0.25rem 0;
@@ -559,24 +596,42 @@ figcaption > i {
       animation-direction: alternate;
 }
 
+.right_player .bar .bar_active {
+      animation-name: progress;
+      animation-timing-function: linear;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+}
+
 @keyframes progress {
       0% {
             width: 0%;
+            background-color: red;
       }
       20% {
             width: 20%;
+            background-color: rgb(255, 102, 0);
       }
       40% {
             width: 40%;
+            background-color: rgb(255, 166, 0);
+
       }
       60% {
             width: 60%;
+            background-color: rgb(251, 255, 0);
+
       }
       80% {
             width: 80%;
+            background-color: rgb(200, 255, 0);
+            
       }
       100% {
             width: 100%;
+            background-color: green;
+
       }
 }
 .bar {
